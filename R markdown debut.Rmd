@@ -49,9 +49,32 @@ mpg %>%
   theme_minimal()
 ```
 
+Let's clean it!
+
+```{r}
+mpg_clean <- mpg %>%
+  filter(cty > 20)
+```
 
 
+```{r}
+view(mpg_clean)
+unique(mpg$cty)
+length(unique(mpg$cty))
+```
 
+```{r}
+mpg %>%
+  count(manufacturer) %>%
+  arrange(desc(n)) %>%
+  rename("Number of Vehicles" = n)
+
+```
+
+```{r}
+
+  
+```
 
 
 
