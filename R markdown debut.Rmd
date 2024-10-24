@@ -73,7 +73,9 @@ mpg %>%
 
 ```{r}
 
-  
+  mpg_clean <- mpg_clean %>%
+  mutate(colors = case_when(model == "camry")
+        
 ```
 
 
